@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  color: purple;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: purple;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #e6e6e6;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
