@@ -1,0 +1,127 @@
+/* Terminal styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #181818;
+}
+
+.particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.terminal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 700px;
+  height: 70%;
+  max-height: 500px;
+  background: #1e1e1e;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.terminal-header {
+  height: 35px;
+  width: 100%;
+  background: #2c2c2c;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.terminal-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.terminal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.terminal-button {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.minimize {
+  background: #ffcc00;
+}
+
+.maximize {
+  background: #00cc00;
+}
+
+.close {
+  background: #ff3333;
+}
+
+.terminal-body {
+  padding: 20px;
+  height: calc(100% - 75px);
+  overflow: auto;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  color: #00FF00;
+}
+
+.terminal-input {
+  color: #fff;
+  border: none;
+  background: none;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  outline: none;
+  width: calc(100% - 60px);
+}
+
+.terminal-input:focus {
+  border: none;
+  outline: none;
+}
+
+.terminal-output {
+  margin-top: 10px;
+}
+
+.terminal-output-command {
+  color: #ffcc00;
+}
+
+.terminal-output-response {
+  color: #fff;
+}
+
+.terminal-output-response-code {
+  color: #00FF00;
+}
+
+@media only screen and (max-width: 600px) {
+  .terminal-window {
+    width: 90%;
+    height: 80%;
+    max-height: unset;
+  }
+}
