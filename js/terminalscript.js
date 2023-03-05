@@ -12,25 +12,25 @@ const commands = {
   default: 'Command not found. Type "help" for a list of available commands.'
 }
 document.addEventListener('DOMContentLoaded', function() {
-  // Add event listener for input field
+    // Add event listener for input field
 inputField.addEventListener('keydown', function(e) {
   // Check if enter key is pressed
-  if (e.keyCode === 13) {
-    // Get input value
-    const input = inputField.value.trim().toLowerCase();
-    // Get command function or default
-    const command = commands[input] || commands.default;
-    // Display command result
-    terminalBody.innerHTML += `<div class="terminal-output">${inputField.value}</div>`;
-    if (typeof command === 'function') {
-      command();
-    } else {
-      terminalBody.innerHTML += `<div class="terminal-output">${command}</div>`;
+    if (e.keyCode === 13) {
+      // Get input value
+      const input = inputField.value.trim().toLowerCase();
+      // Get command function or default
+      const command = commands[input] || commands.default;
+      // Display command result
+      terminalBody.innerHTML += `<div class="terminal-output">${inputField.value}</div>`;
+      if (typeof command === 'function') {
+        command();
+      } else {
+        terminalBody.innerHTML += `<div class="terminal-output">${command}</div>`;
+      }
+      // Clear input field
+      inputField.value = '';
     }
-    // Clear input field
-    inputField.value = '';
-  }
-});
+  });
 });
 
 
