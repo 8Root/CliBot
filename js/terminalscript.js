@@ -11,8 +11,8 @@ const commands = {
   },
   default: 'Command not found. Type "help" for a list of available commands.'
 }
-
-// Add event listener for input field
+document.addEventListener('DOMContentLoaded', function() {
+  // Add event listener for input field
 inputField.addEventListener('keydown', function(e) {
   // Check if enter key is pressed
   if (e.keyCode === 13) {
@@ -31,3 +31,6 @@ inputField.addEventListener('keydown', function(e) {
     inputField.value = '';
   }
 });
+});
+
+
